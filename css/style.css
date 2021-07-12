@@ -923,7 +923,7 @@ body.ie ._ibg img {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 30px 0px;
   color: rgba(0, 0, 0, 0.75);
   letter-spacing: 2px;
 }
@@ -932,7 +932,7 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px -15px;
+  margin: 0px -10px;
   height: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -942,7 +942,7 @@ body.ie ._ibg img {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
-  padding: 15px 15px;
+  padding: 20px 20px;
 }
 
 .portfolio-page__linck {
@@ -950,19 +950,30 @@ body.ie ._ibg img {
   padding: 0px 0px 60% 0px;
   cursor: pointer;
   margin: 0px 0px 20px 0px;
+  border-radius: 15px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.portfolio-page__linck img {
+  border-radius: 15px;
 }
 
 .portfolio-page__label-linck {
-  display: block;
+  display: inline-block;
   cursor: pointer;
   color: #303330;
   font-weight: 700;
   letter-spacing: 2px;
   margin: 0px 0px 5px 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .portfolio-page__text {
-  line-height: 133.3333333333%;
+  line-height: 140%;
 }
 
 .progress {
@@ -1015,6 +1026,12 @@ body.ie ._ibg img {
 
   .select__options {
     font-size: 18px;
+  }
+
+  .portfolio-page__row {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 }
 
@@ -1165,6 +1182,50 @@ body.ie ._ibg img {
     font-size: 28px;
     margin: 0px 0px 20px 0px;
   }
+
+  .portfolio-page__content {
+    margin: 0px -7.5px;
+  }
+
+  .portfolio-page__row {
+    padding: 20px 15px;
+  }
+
+  .portfolio-page__label-linck {
+    font-size: 16px;
+  }
+
+  .portfolio-page__text {
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 580px) {
+  .portfolio-page__content {
+    margin: 0;
+  }
+
+  .portfolio-page__row {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .portfolio-page__row:last-child {
+    margin: 0;
+  }
+
+  .portfolio-page__linck img {
+    border-radius: 0;
+  }
+
+  .portfolio-page__linck {
+    margin: 0px -10px 10px -10px;
+    border-radius: 0;
+  }
 }
 
 @media (any-hover: hover) {
@@ -1186,6 +1247,18 @@ body.ie ._ibg img {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
+  }
+
+  .portfolio-page__linck:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0 0 10px rgba(170, 84, 84, 0.8);
+            box-shadow: 0 0 10px rgba(170, 84, 84, 0.8);
+  }
+
+  .portfolio-page__label-linck:hover {
+    color: #18181a;
   }
 }
 

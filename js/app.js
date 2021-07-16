@@ -618,7 +618,31 @@ function menu_close() {
 	menuBody.classList.remove("_active");
 }
 
-//====================Scroll==================++++++++++===
+// =====================Добавляет активний клас а при нажатии на соседний елемен удаляет его 
+if (window.innerWidth >= 768 && isMobile.any()) {
+	document.querySelectorAll('.portfolio-page__item').forEach(function (link, index) {
+		link.addEventListener('click', function () {
+			if (this.classList.contains('_hover')) {
+				this.classList.remove('_hover');
+			} else {
+				const activeLink = document.querySelector('.portfolio-page__item._hover');
+				if (activeLink) {
+					activeLink.classList.remove('_hover');
+				}
+				this.classList.add('_hover');
+			}
+		});
+	});
+}
+
+
+
+
+
+
+
+
+// ====================Scroll==================++++++++++===
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto], .header__link[data-goto]');
 // if (menuLinks.length > 0) {
 // 	menuLinks.forEach(menuLink => {
@@ -653,7 +677,7 @@ function menu_close() {
 // 		}
 // 	}
 // }
-//=================
+// =================
 //BodyLock
 function body_lock(delay) {
 	let body = document.querySelector("body");

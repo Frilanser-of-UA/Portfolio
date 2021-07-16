@@ -1013,6 +1013,14 @@ body.ie ._ibg img {
   height: auto;
 }
 
+.portfolio-page__item._hover .portfolio-page__hover {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+
 .portfolio-page__img {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1022,35 +1030,35 @@ body.ie ._ibg img {
 }
 
 .portfolio-page__img_height-1 {
-  padding: 0px 0px 95% 0px;
+  padding: 0px 0px 97% 0px;
 }
 
 .portfolio-page__img_height-2 {
-  padding: 0px 0px 75% 0px;
+  padding: 0px 0px 77% 0px;
 }
 
 .portfolio-page__img_height-3 {
-  padding: 0px 0px 116% 0px;
+  padding: 0px 0px 118% 0px;
 }
 
 .portfolio-page__img_height-4 {
-  padding: 0px 0px 70% 0px;
+  padding: 0px 0px 72% 0px;
 }
 
 .portfolio-page__img_height-5 {
-  padding: 0px 0px 78% 0px;
+  padding: 0px 0px 80% 0px;
 }
 
 .portfolio-page__img_height-6 {
-  padding: 0px 0px 120% 0px;
+  padding: 0px 0px 122% 0px;
 }
 
 .portfolio-page__img_height-7 {
-  padding: 0px 0px 68% 0px;
+  padding: 0px 0px 70% 0px;
 }
 
 .portfolio-page__img_height-8 {
-  padding: 0px 0px 80% 0px;
+  padding: 0px 0px 82% 0px;
 }
 
 .portfolio-page__hover {
@@ -1230,6 +1238,26 @@ body.ie ._ibg img {
 @media (max-width: 1182px) {
   ._container {
     max-width: 970px;
+  }
+
+  .portfolio-page__hover {
+    padding: 5px;
+  }
+
+  .portfolio-page__label-linck {
+    font-size: 14;
+  }
+
+  .portfolio-page__label-linck::before {
+    bottom: -5px;
+  }
+
+  .portfolio-page__text {
+    font-size: 14px;
+    line-height: 110%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
 }
 
@@ -1415,28 +1443,40 @@ body.ie ._ibg img {
   }
 
   .portfolio-page__title {
-    font-size: 28px;
+    font-size: 22px;
     margin: 0px 0px 20px 0px;
   }
 
-  .nav-portfolio__item {
-    margin-right: 15px;
-    padding: 15px 10px;
-  }
-
-  .nav-portfolio__link::before {
-    bottom: 5px;
-  }
-}
-
-@media (max-width: 680px) {
   .portfolio-page__row {
     width: 48%;
     margin: 1% 1%;
   }
 
   .portfolio-page__img_height-8 {
-    padding: 0px 0px 92% 0px;
+    padding: 0px 0px 94% 0px;
+  }
+
+  .nav-portfolio__item {
+    margin-right: 10px;
+    padding: 7px 5px;
+  }
+
+  .nav-portfolio__link::before {
+    bottom: -2px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .portfolio-page__label-linck {
+    font-size: 13;
+  }
+
+  .portfolio-page__text {
+    display: none;
+  }
+
+  .portfolio-page__label-btn {
+    padding: 9.5px 18.5px;
   }
 }
 

@@ -16,6 +16,56 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^=_icon-]:before,
+[class*=" _icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^=_icon-]:before,
+[class*=" _icon-"]:before {
+  display: block;
+}
+
+._icon-git:before {
+  content: "";
+}
+
+._icon-gulp:before {
+  content: "";
+}
+
+._icon-mail:before {
+  content: "";
+}
+
+._icon-scss:before {
+  content: "";
+}
+
+._icon-tekegram:before {
+  content: "";
+}
+
+._icon-call:before {
+  content: "";
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -813,8 +863,8 @@ body.ie ._ibg img {
 
 .header__logo {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 90px;
-          flex: 0 0 90px;
+      -ms-flex: 0 0 95px;
+          flex: 0 0 95px;
   height: auto;
   display: block;
   border: 2.5px solid #a1a7a1;
@@ -822,41 +872,55 @@ body.ie ._ibg img {
   overflow: hidden;
   position: relative;
   z-index: 3;
+  margin: 0px 20px 0px 0px;
 }
 
 .header__logo img {
   max-width: 100%;
 }
 
-.header__tel {
+.header__contakts {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  margin-left: 20px;
+}
+
+.header__linkc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   color: #dfe7e0;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  position: relative;
   z-index: 3;
+  position: relative;
+  margin: 0px 0px 15px 0px;
+  font-size: 24px;
 }
 
-.header__tel span {
+.header__linkc:last-child {
+  margin: 0;
+}
+
+.header__linkc span {
   display: block;
   position: relative;
+  font-size: 18px;
+  margin: 0px 0px 0px 10px;
 }
 
-.header__tel span::before {
+.header__linkc span::before {
   content: "";
   width: 100%;
   height: 2px;
   position: absolute;
-  bottom: -10px;
+  bottom: -8px;
   left: 0;
   background-color: rgba(223, 231, 224, 0.8);
   -webkit-transform: scale(0);
@@ -868,6 +932,9 @@ body.ie ._ibg img {
 }
 
 .menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -893,6 +960,10 @@ body.ie ._ibg img {
 
 .menu__item {
   margin: 0px 40px 0px 0px;
+}
+
+.menu__item:last-child {
+  margin: 0px;
 }
 
 .menu__link {
@@ -1175,8 +1246,17 @@ body.ie ._ibg img {
     font-size: 18px;
   }
 
+  .header__linkc span {
+    font-size: 16px;
+  }
+
   .menu__item {
     margin: 0px 15px 0px 0px;
+  }
+
+  .menu__link {
+    padding: 5px 10px;
+    font-size: 16px;
   }
 }
 
@@ -1196,15 +1276,26 @@ body.ie ._ibg img {
 
   .header__logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 60px;
-            flex: 0 0 60px;
+        -ms-flex: 0 0 70px;
+            flex: 0 0 70px;
   }
 
-  .header__tel {
-    margin: 0px 10px 0px 0px;
+  .header__contakts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px 15px 0px 0px;
   }
 
-  .header__tel span {
+  .header__linkc {
+    margin: 0px 30px 0px 0px;
+    font-size: 32px;
+  }
+
+  .header__linkc span {
     display: none;
   }
 
@@ -1215,7 +1306,7 @@ body.ie ._ibg img {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 30px 0px 0px;
   }
 
   .menu__body {
@@ -1267,8 +1358,8 @@ body.ie ._ibg img {
   .icon-menu {
     display: block;
     position: relative;
-    width: 30px;
-    height: 18px;
+    width: 35px;
+    height: 25px;
     cursor: pointer;
     z-index: 5;
     background-color: inherit;
@@ -1283,7 +1374,7 @@ body.ie ._ibg img {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: #dfe7e0;
   }
 
   .icon-menu span:first-child {
@@ -1350,11 +1441,11 @@ body.ie ._ibg img {
 }
 
 @media (any-hover: hover) {
-  .header__tel span:hover {
+  .header__linkc span:hover {
     color: white;
   }
 
-  .header__tel span:hover::before {
+  .header__linkc span:hover::before {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);

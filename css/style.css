@@ -1096,14 +1096,17 @@ body.ie ._ibg img {
 .portfolio-page__label-linck {
   letter-spacing: 0.2em;
   color: #19bd9a;
-  position: relative;
   display: inline-block;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-.portfolio-page__label-linck::before {
+.portfolio-page__label-linck span {
+  position: relative;
+}
+
+.portfolio-page__label-linck span::before {
   content: "";
   height: 1px;
   background-color: #19bd9a;
@@ -1248,7 +1251,7 @@ body.ie ._ibg img {
     font-size: 14;
   }
 
-  .portfolio-page__label-linck::before {
+  .portfolio-page__label-linck span::before {
     bottom: -5px;
   }
 
@@ -1345,9 +1348,9 @@ body.ie ._ibg img {
     height: 100%;
     background-color: rgba(58, 121, 158, 0.9);
     padding: 120px 20px 20px 40px;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
     overflow: auto;
     z-index: 2;
   }
@@ -1381,6 +1384,10 @@ body.ie ._ibg img {
 
   .menu__item:last-child {
     margin: 0px;
+  }
+
+  .menu__link {
+    font-size: 20px;
   }
 
   .icon-menu {
@@ -1466,17 +1473,34 @@ body.ie ._ibg img {
   }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 620px) {
   .portfolio-page__label-linck {
-    font-size: 13;
+    line-height: 160%;
   }
 
   .portfolio-page__text {
     display: none;
   }
+}
+
+@media (max-width: 479.98px) {
+  .portfolio-page__label-linck {
+    font-size: 13;
+  }
 
   .portfolio-page__label-btn {
     padding: 9.5px 18.5px;
+  }
+}
+
+@media (max-width: 380px) {
+  .portfolio-page__row {
+    width: 100%;
+    margin: 1% 0;
+  }
+
+  .portfolio-page__img {
+    padding: 0px 0px 65% 0px;
   }
 }
 
@@ -1508,7 +1532,7 @@ body.ie ._ibg img {
     color: #0cecbc;
   }
 
-  .portfolio-page__label-linck:hover::before {
+  .portfolio-page__label-linck:hover span::before {
     left: 100%;
     -webkit-transform: translate(-100%, 0);
         -ms-transform: translate(-100%, 0);

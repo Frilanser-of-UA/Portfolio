@@ -646,40 +646,40 @@ window.onload = function () {
 
 
 // ====================Scroll==================++++++++++===
-// const menuLinks = document.querySelectorAll('.menu__link[data-goto], .header__link[data-goto]');
-// if (menuLinks.length > 0) {
-// 	menuLinks.forEach(menuLink => {
-// 		menuLink.addEventListener("click", onMenuLinkClick);
-// 	});
-// 	function onMenuLinkClick(e) {
-// 		const menuLink = e.target;
-// 		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-// 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
-// 			//====================Mobile=====================
-// 			if (isMobile.any()) {
-// 				//====================Закриваеm меню при клике=====================
-// 				if (iconMenu.classList.contains('_active')) {
-// 					iconMenu.classList.remove("_active");
-// 					menu.classList.remove("_active");
-// 					body.classList.remove("_lock");
-// 				}
-// 				//====================Mobile=====================
-// 				const gotoBlockValueMinus = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header__header').offsetHeight;
-// 				window.scrollTo({
-// 					top: gotoBlockValueMinus,
-// 					behavior: "smooth",
-// 				});
-// 			} else {
-// 				const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
-// 				window.scrollTo({
-// 					top: gotoBlockValue,
-// 					behavior: "smooth",
-// 				});
-// 			}
-// 			e.preventDefault();
-// 		}
-// 	}
-// }
+const menuLinks = document.querySelectorAll('.menu__link[data-goto], .header__link[data-goto]');
+if (menuLinks.length > 0) {
+	menuLinks.forEach(menuLink => {
+		menuLink.addEventListener("click", onMenuLinkClick);
+	});
+	function onMenuLinkClick(e) {
+		const menuLink = e.target;
+		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			//====================Mobile=====================
+			if (isMobile.any()) {
+				//====================Закриваеm меню при клике=====================
+				if (iconMenu.classList.contains('_active')) {
+					iconMenu.classList.remove("_active");
+					menu.classList.remove("_active");
+					body.classList.remove("_lock");
+				}
+				//====================Mobile=====================
+				const gotoBlockValueMinus = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header__header').offsetHeight;
+				window.scrollTo({
+					top: gotoBlockValueMinus,
+					behavior: "smooth",
+				});
+			} else {
+				const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
+				window.scrollTo({
+					top: gotoBlockValue,
+					behavior: "smooth",
+				});
+			}
+			e.preventDefault();
+		}
+	}
+}
 // =================
 //BodyLock
 function body_lock(delay) {

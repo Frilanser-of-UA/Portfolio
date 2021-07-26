@@ -1202,6 +1202,15 @@ body.ie ._ibg img {
   bottom: -12px;
 }
 
+.about-page {
+  position: relative;
+}
+
+.about-page__container {
+  position: relative;
+  z-index: 1;
+}
+
 .about-page__label {
   text-align: center;
   max-width: 540px;
@@ -1353,8 +1362,8 @@ body.ie ._ibg img {
 
 .tabs-about-page__nav {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 160px;
-          flex: 0 0 160px;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1362,37 +1371,33 @@ body.ie ._ibg img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .tabs-about-page__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60px;
-          flex: 0 0 60px;
-  width: 60px;
-  cursor: pointer;
-  background-color: #b2b3b3;
+      -ms-flex: 0 0 80px;
+          flex: 0 0 80px;
+  width: 100%;
   margin: 0px 0px 20px 0px;
-  border-radius: 50%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0px 0px 0px 15px;
+  border-radius: 50px 0px 0px 50px;
 }
 
 .tabs-about-page__item._active {
-  background-color: #6ebbbb;
+  background-color: rgba(110, 187, 187, 0.6);
+}
+
+.tabs-about-page__item._active .tabs-about-page__img {
+  background-color: white;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -1406,10 +1411,41 @@ body.ie ._ibg img {
   max-width: 100%;
 }
 
+.tabs-about-page__img {
+  cursor: pointer;
+  background-color: #b2b3b3;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 60px;
+  height: 60px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .tabs-about-page__body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.tabs-about-page__content {
+  height: 100%;
+  padding: 20px;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.tabs-about-page__content._active {
+  background-color: rgba(110, 187, 187, 0.6);
 }
 
 .tabs-about-page__label {
@@ -1427,6 +1463,109 @@ body.ie ._ibg img {
   letter-spacing: 2px;
   line-height: 150%;
   text-indent: 30px;
+}
+
+.paralax {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.paralax__item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.paralax__img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.paralax__img_position-1 {
+  left: 25%;
+  top: 2%;
+}
+
+.paralax__img_position-2 {
+  left: 9%;
+  top: 9%;
+}
+
+.paralax__img_position-3 {
+  left: 88%;
+  top: 13%;
+}
+
+.paralax__img_position-4 {
+  left: 5%;
+  top: 30%;
+}
+
+.paralax__img_position-5 {
+  left: 15%;
+  top: 15%;
+}
+
+.paralax__img_position-6 {
+  left: 86%;
+  top: 35%;
+}
+
+.paralax__img_position-7 {
+  left: 68%;
+  top: 90%;
+}
+
+.paralax__img_position-8 {
+  left: 76%;
+  top: 85%;
+}
+
+.paralax__img_position-9 {
+  left: 25%;
+  top: 53%;
+}
+
+.paralax__img_position-10 {
+  left: 90%;
+  top: 51%;
+}
+
+.paralax__img_position-11 {
+  left: 4%;
+  top: 55%;
+}
+
+.paralax__img_position-12 {
+  left: 50%;
+  top: 88%;
+}
+
+.paralax__img_position-13 {
+  left: 36%;
+  top: 87%;
+}
+
+.paralax__img_position-14 {
+  left: 8%;
+  top: 42%;
+}
+
+.paralax__img_position-15 {
+  left: 72%;
+  top: 8%;
+}
+
+.paralax__img_position-16 {
+  left: 90%;
+  top: 25%;
 }
 
 .progress {
@@ -1495,6 +1634,15 @@ body.ie ._ibg img {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
   }
+
+  .study-about-page__img {
+    width: 100%;
+    padding: 0px 0px 49% 0px;
+  }
+
+  .paralax {
+    display: none;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1532,7 +1680,7 @@ body.ie ._ibg img {
 
   .title {
     font-size: 22px;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 10px 0px;
   }
 
   .header::before {
@@ -1556,11 +1704,11 @@ body.ie ._ibg img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 25px 0px 0px;
   }
 
   .header__linkc {
-    margin: 0px 30px 0px 0px;
+    margin: 0px 25px 0px 0px;
     font-size: 32px;
   }
 
@@ -1681,11 +1829,10 @@ body.ie ._ibg img {
 
   .page__portfolio {
     padding: 20px 0px;
-    margin-bottom: 30px;
   }
 
   .page__about {
-    padding: 20px 0px 20px 0px;
+    padding: 40px 0px 0px 0px;
   }
 
   .portfolio-page__nav {
@@ -1710,8 +1857,22 @@ body.ie ._ibg img {
     bottom: -2px;
   }
 
+  .about-page__label {
+    font-size: 14px;
+  }
+
   .about-page__study {
-    margin: 30px 0px 0px 0px;
+    margin: 15px 0px 40px 0px;
+  }
+
+  .tabs-about-page__nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60px;
+            flex: 0 0 60px;
+  }
+
+  .tabs-about-page__item {
+    padding: 0px 20px 0px 10px;
   }
 }
 
@@ -1732,6 +1893,39 @@ body.ie ._ibg img {
 
   .portfolio-page__label-btn {
     padding: 9.5px 18.5px;
+  }
+
+  .tabs-about-page__nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45px;
+            flex: 0 0 45px;
+  }
+
+  .tabs-about-page__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+            flex: 0 0 50px;
+    width: 50px;
+    padding: 0 5px 0 5px;
+  }
+
+  .tabs-about-page__item picture {
+    width: 32px;
+  }
+
+  .tabs-about-page__img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tabs-about-page__label {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .tabs-about-page__text {
+    font-size: 14;
+    text-indent: 0;
+    line-height: 120%;
   }
 }
 

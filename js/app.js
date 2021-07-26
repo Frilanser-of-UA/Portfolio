@@ -1,7 +1,10 @@
 function email_test(input) {
 	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
-
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene, {
+	hoverOnly: true
+});
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {

@@ -394,7 +394,7 @@ body.ie ._ibg img {
   transition: opacity 0.5s ease 0s;
   display: block;
   right: 30px;
-  bottom: 30px;
+  bottom: 15px;
   position: fixed;
   width: 50px;
   height: 50px;
@@ -504,7 +504,7 @@ body.ie ._ibg img {
 }
 
 .portfolio-page__img_height-6 {
-  padding: 0px 0px 122% 0px;
+  padding: 0px 0px 124% 0px;
 }
 
 .portfolio-page__img_height-7 {
@@ -1108,9 +1108,9 @@ body.ie ._ibg img {
 }
 
 .contacts-page__text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1118,6 +1118,7 @@ body.ie ._ibg img {
 
 .contacts-page__text span {
   margin-right: 5px;
+  width: auto;
 }
 
 .contacts-page__icon {

@@ -1211,7 +1211,7 @@ body.ie ._ibg img {
   }
 
   .portfolio-page__label-linck {
-    font-size: 14;
+    font-size: 14px;
   }
 
   .portfolio-page__label-linck span::before {
@@ -1510,7 +1510,7 @@ body.ie ._ibg img {
 
 @media (max-width: 479.98px) {
   .portfolio-page__label-linck {
-    font-size: 13;
+    font-size: 13px;
   }
 
   .portfolio-page__label-btn {
@@ -1545,7 +1545,7 @@ body.ie ._ibg img {
   }
 
   .tabs-about-page__text {
-    font-size: 14;
+    font-size: 14px;
     text-indent: 0;
     line-height: 120%;
   }

@@ -1184,6 +1184,11 @@ body.ie ._ibg img {
   height: 3px;
   background-color: #e93232;
   z-index: 10;
+  display: none;
+}
+
+.progress._scroll {
+  display: block;
 }
 
 .page {

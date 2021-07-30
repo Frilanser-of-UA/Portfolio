@@ -28,6 +28,7 @@ function progressBar(e) {
 	let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 	let persent = windowScroll / windowHeight * 100;
 	progress.style.width = persent + '%';
+	progress.classList.add('_scroll');
 }
 // ===========================Прогресс бар при сколле======================
 var ua = window.navigator.userAgent;

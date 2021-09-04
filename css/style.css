@@ -483,15 +483,15 @@ body.ie ._ibg img {
 }
 
 .portfolio-page__img_height-1 {
-  padding: 0px 0px 95% 0px;
+  padding: 0px 0px 65% 0px;
 }
 
 .portfolio-page__img_height-2 {
-  padding: 0px 0px 75% 0px;
+  padding: 0px 0px 95% 0px;
 }
 
 .portfolio-page__img_height-3 {
-  padding: 0px 0px 80% 0px;
+  padding: 0px 0px 95% 0px;
 }
 
 .portfolio-page__img_height-4 {
@@ -507,15 +507,19 @@ body.ie ._ibg img {
 }
 
 .portfolio-page__img_height-7 {
-  padding: 0px 0px 80% 0px;
+  padding: 0px 0px 77% 0px;
 }
 
 .portfolio-page__img_height-8 {
-  padding: 0px 0px 90% 0px;
+  padding: 0px 0px 110% 0px;
 }
 
 .portfolio-page__img_height-9 {
-  padding: 0px 0px 80% 0px;
+  padding: 0px 0px 105% 0px;
+}
+
+.portfolio-page__img_height-10 {
+  padding: 0px 0px 70% 0px;
 }
 
 .portfolio-page__hover {
@@ -1477,6 +1481,10 @@ body.ie ._ibg img {
     margin: 1% 1%;
   }
 
+  .portfolio-page__img_height-9 {
+    padding: 0px 0px 113% 0px;
+  }
+
   .nav-portfolio__item {
     margin-right: 10px;
     padding: 7px 5px;
@@ -1625,7 +1633,7 @@ body.ie ._ibg img {
   }
 
   .portfolio-page__img {
-    padding: 0px 0px 65% 0px;
+    padding: 0px 0px 55% 0px;
   }
 }
 
